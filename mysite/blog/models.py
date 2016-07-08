@@ -4,7 +4,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
-class Post(models.Model):
+class post(models.Model):
 	STATUS_CHOICE = (("draft","DRAFT"),("published","PUBLISHED"),)
 	title = models.CharField(max_length=250)
 	slug = models.SlugField(max_length=250,unique_for_date='published')
